@@ -1,0 +1,316 @@
+.wrapper {
+  padding: 30px;
+  background-color: #fff;
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+  border-radius: 10px;
+}
+.tableWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tableContainer {
+  width: 100%;
+  padding: 0;
+  background: white;
+  overflow: hidden;
+
+  :global {
+    .ag-theme-quartz {
+      --ag-background-color: white;
+      --ag-header-background-color: white;
+      --ag-odd-row-background-color: white;
+      --ag-row-hover-color: #f5f5f5;
+      --ag-border-color: #e0e0e0;
+      --ag-header-foreground-color: #666;
+      --ag-foreground-color: #232323;
+      --ag-font-size: 14px;
+      --ag-font-family: "Cairo", sans-serif;
+
+      --ag-border-radius: 0;
+      --ag-header-height: 48px;
+      --ag-row-height: 72px;
+      height: 100%;
+      width: 100%;
+    }
+    .ag-root .ag-row-selected::before,
+    .ag-root .ag-row-selected::after {
+      display: none !important;
+    }
+
+    .ag-root .ag-row-selected {
+      background-color: transparent !important;
+    }
+    .ag-header-cell-text {
+      font-weight: bold;
+      font-size: 16px;
+      color: #b2b3b9;
+    }
+    .ag-root-wrapper {
+      height: 100%;
+      width: 100%;
+      border: none;
+    }
+
+    .ag-body-viewport {
+      height: 100%;
+    }
+
+    .ag-header {
+      background: white;
+    }
+
+    .ag-pinned-left-header {
+      border: none;
+      display: flex;
+      justify-content: center;
+      width: 58px !important;
+      min-width: 58px !important;
+      max-width: 58px !important;
+    }
+    .ag-header-cell {
+      font-weight: 500;
+      font-size: 14px;
+      color: #666;
+      padding: 0 16px;
+    }
+
+    .ag-row {
+      border-bottom: 1px solid #f0f0f0;
+      background: white;
+    }
+
+    .ag-row-selected {
+      background: white !important;
+      border-left: none;
+    }
+
+    .ag-cell {
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      border-right: none;
+    }
+
+    .ag-header-cell:first-child,
+    .ag-cell:first-child {
+      border-right: none !important;
+    }
+
+    .ag-paging-panel {
+      border-top: 1px solid #e0e0e0;
+      padding: 16px 24px;
+      background: white;
+      height: 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .ag-paging-row-summary-panel {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .ag-checkbox {
+      width: 18px;
+      height: 18px;
+    }
+    .ag-header-cell-comp-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .ag-checkbox-input-wrapper {
+      width: 18px;
+      height: 18px;
+    }
+
+    .ag-checkbox-input {
+      width: 18px;
+      height: 18px;
+      accent-color: #242edb;
+    }
+    .ag-pinned-left-cols-container,
+    .ag-cell-last-left-pinned {
+      width: 58px !important;
+      max-width: 58px !important;
+      min-width: 58px !important;
+    }
+
+    .ag-paging-page-summary-panel {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .ag-header-cell-label,
+    .ag-cell-value {
+      justify-content: center;
+    }
+
+    .ag-header-cell {
+      .ag-header-cell-label {
+        justify-content: center !important;
+      }
+    }
+    .ag-header-cell[col-id="title"] {
+      .ag-header-cell-label {
+        justify-content: flex-start !important;
+      }
+    }
+
+    .ag-paging-button {
+      width: 32px;
+      height: 32px;
+      border: 1px solid #e0e0e0;
+      background: white;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: #666;
+      font-size: 14px;
+
+      &:hover {
+        background: #f5f5f5;
+      }
+
+      &.ag-disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+    }
+
+    .ag-paging-button.ag-selected {
+      background: #242edb;
+      color: white;
+      border-color: #242edb;
+    }
+  }
+}
+.topCheckboxWrapper {
+  display: flex;
+  justify-content: center;
+  :global {
+    // Ensure Mantine checkbox is visible
+    input[type="checkbox"] {
+      cursor: pointer;
+    }
+
+    .mantine-Checkbox-input {
+      cursor: pointer;
+    }
+
+    .mantine-Checkbox-input:checked {
+      background-color: #3c538e;
+      border-color: #3c538e;
+    }
+
+    .mantine-Checkbox-input:indeterminate {
+      background-color: #3c538e;
+      border-color: #3c538e;
+    }
+  }
+}
+.loadingOverlay {
+  width: 100%;
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.loading,
+.error {
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.error {
+  color: red;
+}
+
+.customPagination {
+  padding: 11px 0;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.paginationInfo {
+  font-size: 18px;
+  color: #969b9f;
+  font-family: "Roboto", sans-serif;
+}
+
+.paginationButtons {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.pageStat {
+  font-weight: normal;
+  color: #333333;
+}
+.paginationButton,
+.paginationArrow {
+  min-width: 30px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #666;
+  font-size: 14px;
+  padding: 0 8px;
+  transition: all 0.2s;
+
+  &:hover:not(:disabled) {
+    background: #f5f5f5;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  &.active {
+    background: #242edb;
+    color: white;
+    border-color: #242edb;
+  }
+}
+
+.paginationArrow {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0 4px;
+  border: none;
+}
+
+.paginationEllipsis {
+  min-width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 14px;
+}

@@ -1,0 +1,49 @@
+.label {
+  font-size: 18px;
+}
+
+.input {
+  &Wrapper {
+    display: flex;
+    flex-flow: column;
+    gap: 6px;
+  }
+  height: 55px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 14px;
+  border: 1px solid #ededed;
+  border-radius: 12px;
+  padding: 14px 16px;
+  background-color: #fff;
+  > input {
+    &:focus,
+    &:active {
+      outline: none;
+    }
+    flex: 1;
+    border: none;
+  }
+  &Error {
+    color: red;
+  }
+  &Inner {
+  }
+}
+
+.icon {
+  background-color: none !important;
+  background: none;
+  outline: none !important;
+  border: none !important;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}

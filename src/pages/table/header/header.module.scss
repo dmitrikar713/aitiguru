@@ -1,0 +1,70 @@
+.header {
+  width: 100%;
+  padding: 0 30px;
+  height: 105px;
+  background-color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border-radius: 10px;
+
+  &-wrapper {
+    position: fixed;
+    width: 100%;
+  }
+  &-container {
+    max-width: 200px;
+  }
+  &Title {
+    font-family: "Caira", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #202020;
+  }
+}
+
+.searchBarWrapper {
+  justify-self: center;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  background-color: #242edb;
+  border-radius: 6px;
+  color: white;
+  border: 0;
+  outline: none;
+  display: flex;
+  gap: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.input {
+  width: 1023px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #f3f3f3;
+  border: none;
+  padding-left: 52px;
+}
+
+.productCard {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.productImage {
+  width: 50px;
+}
+
+.searchIcon {
+  padding-left: 25px;
+}

@@ -1,0 +1,153 @@
+:global {
+  input[type="checkbox"] {
+    cursor: pointer;
+  }
+
+  .mantine-Checkbox-input {
+    cursor: pointer;
+  }
+
+  .mantine-Checkbox-input:checked {
+    background-color: #3c538e;
+    border-color: #3c538e;
+  }
+  .mantine-Checkbox-input:indeterminate {
+    background-color: #3c538e;
+    border-color: #3c538e;
+  }
+}
+
+.checkboxCell,
+.checkboxCellSelected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.checkboxCellSelected {
+  border-left: 3px solid #3c538e;
+}
+
+.checkboxHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: none !important;
+  .mantine-Checkbox-input:checked {
+    background-color: #3c538e;
+    border-color: #3c538e;
+  }
+}
+
+// Custom cell styles
+.nameCell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.productImage {
+  width: 48px;
+  height: 48px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.nameContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.productName {
+  font-size: 16px;
+  font-family: "Caira", sans-serif;
+  font-weight: bold;
+  color: #161919;
+}
+
+.productCategory {
+  font-size: 14px;
+  font-family: "Caira", sans-serif;
+  font-weight: 400;
+  color: #b2b3b9;
+}
+
+.vendor {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: bold;
+  font-size: 16px;
+}
+.rating {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 16px;
+}
+.sku {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.price {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+}
+
+.nameColumn {
+  font-weight: 600;
+}
+
+.actionsCell {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.actionButton {
+  height: 32px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s;
+
+  &:first-child {
+    background: #242edb;
+    color: white;
+    width: 52px;
+    border-radius: 23px;
+
+    &:hover {
+      background: #242edb;
+    }
+  }
+
+  &:last-child {
+    background: #f0f0f0;
+    color: #666;
+    width: 32px;
+    border-radius: 50%;
+
+    &:hover {
+      background: #e0e0e0;
+    }
+  }
+}
+
+.plusIcon {
+  line-height: 1;
+  font-weight: 300;
+}
+
+.moreIcon {
+  line-height: 1;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -2px;
+}

@@ -1,0 +1,59 @@
+.actions {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  width: 134px;
+  height: 14px;
+  font-family: "Cairo", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.iconButton {
+  background-color: transparent;
+  border: 1px solid rgb(206, 206, 206);
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #f3f3f3;
+  }
+}
+
+.addButton {
+  background-color: #242edb;
+  border-radius: 6px;
+  color: white;
+  border: 0;
+  outline: none;
+  display: flex;
+  gap: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  align-items: center;
+
+  &:hover {
+    background-color: #1a22c0;
+  }
+}

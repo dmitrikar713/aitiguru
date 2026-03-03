@@ -1,0 +1,131 @@
+.page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 50px;
+  align-items: center;
+}
+.container {
+  width: 527px;
+  position: relative;
+
+  background-color: #fff;
+  box-shadow: 0 24px 32px rgba(0, 0, 0, 0.04);
+  border-radius: 40px;
+  padding: 6px;
+  &Border {
+    border-radius: 34px;
+    padding: 1px;
+    background: linear-gradient(180deg, #ededed 20%, #23232300 100%);
+    overflow: hidden;
+  }
+  &Inner {
+    background: linear-gradient(180deg, #23232305 0%, #23232300 50%);
+    padding: 48px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  &Bg {
+    border-radius: 33px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+}
+.iconContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  position: relative;
+
+  background-color: #fff;
+  box-shadow: 0 12px 8px rgba(0, 0, 0, 0.03);
+  border-radius: 40px;
+  &Border {
+    border-radius: 50%;
+    padding: 1px;
+    background: linear-gradient(180deg, #ededed 20%, #23232300 100%);
+    overflow: hidden;
+    height: 100%;
+  }
+  &Inner {
+    background: linear-gradient(180deg, #23232303 0%, #23232300 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    img {
+      width: 34px;
+      height: 34px;
+    }
+  }
+  &Bg {
+    height: 100%;
+    border-radius: 33px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+}
+.title {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1.5%;
+  padding: 0;
+  margin: 32px 0 12px;
+  color: #232323;
+}
+.description {
+  letter-spacing: 1.5%;
+  font-size: 18px;
+  color: #e0e0e0;
+  margin-bottom: 32px;
+}
+.or {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 0 32px;
+  &Divider {
+    flex: 1;
+    height: 1px;
+    background-color: #ededed;
+  }
+  > p {
+    width: 29px;
+    height: 24px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #ebebeb;
+  }
+  &Option {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    &Button {
+      color: #242edb;
+      text-decoration: underline;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      font: inherit;
+      text-align: inherit;
+      outline: none; /* убирает обводку при фокусе */
+      user-select: none; /* предотвращает выделение текста */
+    }
+  }
+}
+.formContainer {
+  width: 399px;
+}
